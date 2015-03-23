@@ -11,9 +11,12 @@
             <%= pin.user_id %>
             </b>
             <div class="actions">
-            <%= if pin.user
-                pin.user.email 
-                end %>
+              <%= if pin.user
+
+                pin.user.name
+        
+              end %>
+
             </BR>
             <%= link_to edit_pin_path(pin) do %>
             <span class="glyphicon glyphicon-edit" ></span>Edit
